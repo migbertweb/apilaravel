@@ -58,7 +58,7 @@ class TaskController extends Controller
     public function update(Request $request, $id)
     {
         Task::findOrFail($id)->update($request->all());
-        return response(content: "tarea actualizada");
+        return response(content: "Actualizada");
     }
 
     /**
@@ -70,6 +70,6 @@ class TaskController extends Controller
     public function destroy($id)
     {
         Task::destroy($id);
-        return response(content: "La Tarea con el id: $[id] ha sido Eliminada");
+        return response(content: "La Tarea con el id: ha sido Eliminada");
     }
 }
