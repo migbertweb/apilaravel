@@ -17,7 +17,6 @@ class TaskController extends Controller
         $tasks = Task::all();
         return response($tasks);
     }
-
     /**
      * Store a newly created resource in storage.
      *
